@@ -1,11 +1,12 @@
 {
   "name": "JS-First-project",
   "version": "1.0.0",
-  "description": "https://merist5.github.io/Learning-git-2/",
+  "description": "https://merist5.github.io/JS-First-project/",
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
     "test:html": "globstar nu-html-checker *.html",
+    "test:js": "jshint js/*.js",
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
@@ -21,19 +22,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Merist5/Learning-git-2.git"
+    "url": "git+https://github.com/Merist5/JS-First-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Merist5/Learning-git-2/issues"
+    "url": "https://github.com/Merist5/JS-First-project/issues"
   },
-  "homepage": "https://github.com/Merist5/Learning-git-2#readme",
+  "homepage": "https://github.com/Merist5/JS-First-project#readme",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.23.6",
     "globstar": "^1.0.0",
+    "jshint": "^2.9.5",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.8.3",
     "npm-run-all": "^4.1.2",
